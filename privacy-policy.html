@@ -12,6 +12,7 @@
         p, li { font-size: 15px; color: #4b5563; }
         hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
         .lang-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+        .warning-box { background: #fee2e2; border-left: 4px solid #ef4444; padding: 10px 15px; margin: 15px 0; border-radius: 4px; color: #991b1b; }
     </style>
 </head>
 <body>
@@ -20,23 +21,39 @@
         <!-- ENGLISH VERSION -->
         <div class="lang-badge">ENGLISH</div>
         <h1>Privacy Policy</h1>
-        <p>Last Updated: March 17, 2026</p>
+        <p>Last Updated: June 26, 2026</p>
         <p><strong>VaultEx</strong> is committed to protecting your privacy. This policy explains how your data is processed when you use our application.</p>
 
-        <h2>1. Data Collection & Local Storage</h2>
-        <p>VaultEx is a "Local-First" application. Photos, videos, and documents you add to your vault are encrypted and stored locally on your device. We (the developers) do not have access to these files and they are <strong>NOT</strong> uploaded to our servers.</p>
-
-        <h2>2. Third-Party Services</h2>
-        <p>We use the following third-party services to ensure app functionality and provide advertisements:</p>
+        <h2>1. Data Collection, Local Storage & App Features</h2>
+        <p>VaultEx is a "Local-First" privacy application. All your data is encrypted (AES-256) and stored locally on your device. We (the developers) do not have access to your data, and it is <strong>NOT</strong> uploaded to our servers. This Zero-Knowledge architecture applies to all core features:</p>
         <ul>
-            <li><strong>Google Play Services / AdMob:</strong> Used for in-app advertisements. Device identifiers may be used for ad personalization.</li>
-            <li><strong>Firebase (Google):</strong> Used for authentication, cloud settings sync (optional), and app performance analysis.</li>
+            <li><strong>Media Vault & Secure Camera:</strong> Photos and videos imported or captured directly via the in-app camera are encrypted locally.</li>
+            <li><strong>Secure Notes & Contacts:</strong> Any notes or contacts created within the app are fully encrypted and stored securely on your device.</li>
+            <li><strong>Private Web Browser:</strong> Browsing history, bookmarks, and downloaded files are kept strictly on your device and are inaccessible outside the app.</li>
+            <li><strong>Market & Dashboard:</strong> Live market data and conversions are fetched securely without tying the requests to your personal identity.</li>
         </ul>
 
-        <h2>3. User Rights</h2>
-        <p>Users can permanently delete their account and all local data at any time via the "Settings" menu. Once deleted, data cannot be recovered.</p>
+        <h2>2. Cloud Backup & Device Transfer</h2>
+        <ul>
+            <li><strong>Cloud Backup (iCloud/Google Drive):</strong> If you choose to enable Cloud Backup, your data is packaged and encrypted with a custom Backup Password before being uploaded to your personal iCloud or Google Drive account. We do not store or have access to this password.</li>
+            <li><strong>Wi-Fi Transfer:</strong> When transferring data between devices, the transfer happens locally over your Wi-Fi network and is end-to-end encrypted. No data passes through our servers.</li>
+        </ul>
+        <div class="warning-box">
+            <strong>Important Liability Disclaimer:</strong> VaultEx uses zero-knowledge encryption. We do not store your Vault PIN or Cloud Backup Passwords. If you forget your password, your backup cannot be decrypted or recovered. VaultEx cannot be held liable for any data loss resulting from forgotten passwords.
+        </div>
 
-        <h2>4. Contact</h2>
+        <h2>3. Third-Party Services</h2>
+        <p>We use the following third-party services to ensure app functionality, process purchases, and provide advertisements:</p>
+        <ul>
+            <li><strong>Google Play Services / AdMob:</strong> Used for in-app advertisements. Device identifiers may be used for ad personalization.</li>
+            <li><strong>Firebase (Google):</strong> Used for anonymous analytics, crash reporting, and app performance tracking.</li>
+            <li><strong>Apple / Google Billing / RevenueCat:</strong> Used to process premium subscription purchases securely.</li>
+        </ul>
+
+        <h2>4. User Rights</h2>
+        <p>Users can permanently delete all local data at any time via the "Settings" menu or by deleting the app (ensure you backup first if needed). Once deleted, local data cannot be recovered by us.</p>
+
+        <h2>5. Contact</h2>
         <p>If you have any questions, please contact us at: <strong>eaay.games@gmail.com</strong></p>
 
         <hr>
@@ -44,23 +61,39 @@
         <!-- TÜRKÇE VERSİYON -->
         <div class="lang-badge">TÜRKÇE</div>
         <h1>Gizlilik Politikası</h1>
-        <p>Son Güncelleme: 17 Mart 2026</p>
+        <p>Son Güncelleme: 26 Haziran 2026</p>
         <p><strong>VaultEx</strong> olarak gizliliğinize büyük önem veriyoruz. Bu politika, uygulamamızı kullandığınızda verilerinizin nasıl işlendiğini açıklar.</p>
 
-        <h2>1. Veri Toplama ve Yerel Depolama</h2>
-        <p>VaultEx, "Yerel Öncelikli" (Local-First) bir uygulamadır. Kasanıza eklediğiniz dosyalar cihazınızda şifrelenmiş olarak saklanır. Bizim bu dosyalara erişimimiz yoktur ve bu veriler sunucularımıza yüklenmez.</p>
-
-        <h2>2. Üçüncü Taraf Hizmetleri</h2>
-        <p>Uygulamanın işlevselliğini sağlamak ve reklam sunmak amacıyla aşağıdaki hizmetleri kullanıyoruz:</p>
+        <h2>1. Veri Toplama, Yerel Depolama ve Uygulama Özellikleri</h2>
+        <p>VaultEx, "Yerel Öncelikli" (Local-First) bir gizlilik uygulamasıdır. Verileriniz AES-256 ile şifrelenerek yalnızca kendi cihazınızda saklanır. Bizim (geliştiricilerin) verilerinize erişimimiz yoktur ve bu veriler sunucularımıza <strong>YÜKLENMEZ</strong>. Bu "sıfır bilgi" (zero-knowledge) şifrelemesi şu özellikleri kapsar:</p>
         <ul>
-            <li><strong>Google Play Hizmetleri / AdMob:</strong> Uygulama içi reklamlar için kullanılır.</li>
-            <li><strong>Firebase (Google):</strong> Kimlik doğrulama ve veri senkronizasyonu için kullanılır.</li>
+            <li><strong>Medya Kasası ve Güvenli Kamera:</strong> Dışarıdan eklediğiniz veya doğrudan uygulama içi kamerayla çektiğiniz fotoğraf ve videolar yerel olarak şifrelenir.</li>
+            <li><strong>Güvenli Notlar ve Kişiler:</strong> Uygulama içinde oluşturduğunuz notlar ve özel rehber kayıtlarınız cihazınızda güvenle saklanır.</li>
+            <li><strong>Gizli Web Tarayıcı:</strong> Tarama geçmişiniz, yer imleriniz ve indirdiğiniz dosyalar yalnızca cihazınızda tutulur ve uygulamanın dışından erişilemez.</li>
+            <li><strong>Piyasa ve Dönüştürücü:</strong> Canlı piyasa verileri, kişisel kimliğinizle ilişkilendirilmeden güvenli bir şekilde sunuculardan çekilir.</li>
         </ul>
 
-        <h2>3. Kullanıcı Hakları</h2>
-        <p>Kullanıcılar, verilerini diledikleri zaman Ayarlar menüsünden kalıcı olarak silebilirler.</p>
+        <h2>2. Bulut Yedekleme ve Cihaz Transferi</h2>
+        <ul>
+            <li><strong>Bulut Yedekleme (iCloud/Google Drive):</strong> Bulut yedeklemeyi etkinleştirirseniz, verileriniz sizin belirlediğiniz özel bir "Yedekleme Şifresi" ile şifrelenir ve doğrudan kendi kişisel iCloud veya Google Drive hesabınıza yüklenir. Biz bu şifreyi saklamayız ve bilmeyiz.</li>
+            <li><strong>Wi-Fi Cihaz Transferi:</strong> Eski cihazınızdan yeni cihazınıza veri aktarırken işlem, kendi yerel ağınız üzerinden uçtan uca şifreli olarak gerçekleşir. Veriler sunucularımıza uğramaz.</li>
+        </ul>
+        <div class="warning-box">
+            <strong>Önemli Yasal Sorumluluk Reddi:</strong> VaultEx sıfır bilgi şifrelemesi kullanır. Kasa şifrenizi (PIN) veya Bulut Yedekleme şifrelerinizi sunucularımızda saklamayız. Şifrenizi unutmanız durumunda, yedeğiniz bizim tarafımızdan veya başka biri tarafından kesinlikle kurtarılamaz. VaultEx, unutulan şifrelerden kaynaklanan veri kayıplarından yasal olarak sorumlu tutulamaz.
+        </div>
 
-        <h2>4. İletişim</h2>
+        <h2>3. Üçüncü Taraf Hizmetleri</h2>
+        <p>Uygulamanın işlevselliğini sağlamak, satın alımları yönetmek ve reklam sunmak amacıyla aşağıdaki hizmetleri kullanıyoruz:</p>
+        <ul>
+            <li><strong>Google Play Hizmetleri / AdMob:</strong> Uygulama içi reklamlar için kullanılır. Cihaz tanımlayıcılar reklam kişiselleştirme amacıyla kullanılabilir.</li>
+            <li><strong>Firebase (Google):</strong> Anonim performans analizleri ve hata bildirimleri (Crashlytics) için kullanılır.</li>
+            <li><strong>Apple / Google Faturalandırma / RevenueCat:</strong> Premium abonelik satın alımlarını güvenli bir şekilde işlemek için kullanılır.</li>
+        </ul>
+
+        <h2>4. Kullanıcı Hakları</h2>
+        <p>Kullanıcılar, verilerini diledikleri zaman uygulamanın Ayarlar menüsünden veya uygulamayı telefondan silerek kalıcı olarak yok edebilirler. Yerel veriler silindikten sonra bizim tarafımızdan kurtarılması imkansızdır.</p>
+
+        <h2>5. İletişim</h2>
         <p>Sorularınız için: <strong>eaay.games@gmail.com</strong></p>
 
     </div>
